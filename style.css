@@ -1,4 +1,4 @@
-#chat-container {
+#login-container {
     width: 400px;
     height: 300px;
     border: 1px solid #ccc;
@@ -8,39 +8,110 @@
     flex-direction: column;
   }
   
-  #chat-header {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+  #login-container.hidden {
+    display: none;
   }
   
-  #chat-messages {
-    flex: 1;
-    overflow-y: scroll;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  #chat-footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  #chat-input {
+  #login-form {
     flex: 1;
     padding: 10px;
+  }
+  
+  #login-form label {
     margin-right: 10px;
-    border: 1px solid #ccc;
   }
   
-  #chat-send {
+  #login-form input {
+    margin-bottom: 10px;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+#login-form button {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+#signup-button {
+  background-color: #007bff;
+}
+
+#chat-container {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-container.hidden {
+  display: none;
+}
+
+#chat-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#chat-messages {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#chat-footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+#chat-send {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-text {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  word-wrap: break-word;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 10px;
+}
+.message-delete {
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+    margin-left: 10px;
   }
-  
