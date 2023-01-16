@@ -2,12 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Web Chat</title>
+    <title>Advanced Web Chat</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="chat-container">
-      <div id="chat-header">Web Chat</div>
+    <div id="login-container" class="hidden">
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="login-button">Login</button>
+        <button id="signup-button">Sign Up</button>
+      </form>
+    </div>
+    <div id="chat-container" class="hidden">
+      <div id="chat-header">Advanced Web Chat</div>
       <div id="chat-messages"></div>
       <div id="chat-footer">
         <input type="text" id="chat-input" placeholder="Type your message here...">
